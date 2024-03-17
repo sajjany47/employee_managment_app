@@ -2,24 +2,22 @@
 import * as React from 'react';
 import {View} from 'react-native';
 import {Button, TextInput} from 'react-native-paper';
-import Icon from 'react-native-paper';
 
 export const Login = () => {
   const [text, setText] = React.useState('');
   return (
     <View
       style={{
-        display: 'flex',
-        flexDirection: 'column',
+        flex: 1,
         justifyContent: 'center',
-        gap: 8,
-        marginTop: 250,
         margin: 10,
+        gap: 10,
       }}>
       <TextInput
         mode="outlined"
         label="Username/Email/Mobile"
         placeholder="Enter your Id"
+        left={<TextInput.Icon icon="eye" />}
       />
       <TextInput
         mode="outlined"
